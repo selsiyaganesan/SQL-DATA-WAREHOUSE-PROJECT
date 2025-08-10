@@ -1,4 +1,23 @@
+/*
+============================================================================================
+Stored Procedure: load_silver (Bronze -> Silver)
+============================================================================================
+Script Purpose:
+  This stored procedure transforms and cleans data from the 'bronze' schema
+  and loads it into the 'silver' schema.
+  It performs the following actions:
+    - Extracts curated datasets from Bronze tables.
+    - Applies data cleaning, validation, and transformation rules.
+    - Loads the processed data into Silver tables for further analysis.
 
+Parameters:
+    None.
+  This stored procedure does not accept any parameters or return any values.
+
+Usage Example:
+  EXEC silver.load_silver;
+============================================================================================
+*/
 CREATE OR ALTER PROCEDURE Silver.load_silver AS 
 BEGIN
 	DECLARE @start_time DATETIME,@end_time DATETIME,@batch_start_time DATETIME,@batch_end_time DATETIME;
