@@ -1,16 +1,20 @@
 /*
 =============================================================
-Create Database and Schemas
+SQL Data Warehouse – Medallion Architecture Setup
 =============================================================
 Script Purpose:
-This script creates a new database named 'DataWarehouse' after checking if it already exists.
-If the database exists, it is dropped and recreated. Additionally, the script sets up two schemas
-within the database: 'silver' and 'gold'.
+This script creates a new database named 'DataWarehouse' following the Medallion Architecture 
+(Bronze, Silver, Gold layers). If the database already exists, it is dropped and recreated. 
+
+Layers:
+- Bronze: Stores raw, ingested data from source systems (CRM & ERP CSV files).
+- Silver: Stores cleaned, curated datasets ready for analysis.
+- Gold: Stores aggregated, analytics-ready data for BI and reporting.
 
 WARNING:
-Running this script will drop the entire 'DataWarehouse' database if it exists.
-All data in the database will be permanently deleted. Proceed with caution
-and ensure you have proper backups before running this script.
+Running this script will DROP the entire 'DataWarehouse' database if it exists.
+All data in the database will be permanently deleted. 
+Proceed with caution and ensure you have proper backups before running this script.
 */
 
 USE master;
@@ -31,9 +35,14 @@ GO
 USE DataWarehouse;
 GO
 
--- Create Schemas
+-- Create Schemas for Medallion Architecture
+CREATE SCHEMA bronze;
+GO
+
 CREATE SCHEMA silver;
 GO
 
 CREATE SCHEMA gold;
 GO
+
+
