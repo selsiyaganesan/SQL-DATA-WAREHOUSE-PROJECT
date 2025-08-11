@@ -44,14 +44,14 @@ SQL-DATA-WAREHOUSE-PROJECT/
 
 ## 📊 Project Diagrams
 ### Data Flow
-<img width="983" height="650" alt="DATA_FLOW" src="https://github.com/user-attachments/assets/28651b97-b977-4189-ba70-a71f09848709" />
+<img width="965" height="658" alt="data_flow_gen" src="https://github.com/user-attachments/assets/c8177201-ab65-4eaf-b673-392ba9743707" />
+
 
 ### Data Integration
 <img width="1522" height="747" alt="data_integration" src="https://github.com/user-attachments/assets/6f3bde98-9693-4dfa-8f99-b4bb50f9290c" />
 
 ### Data Mart(Star schema)
-<img width="1012" height="495" alt="DATA MART_STAR SCHEMA" src="https://github.com/user-attachments/assets/2e09b0b2-2d4f-479d-b0ca-482e3d353db3" />
-
+<img width="997" height="507" alt="data_model_gen" src="https://github.com/user-attachments/assets/be94f477-0c4d-4469-8cba-943347e7457b" />
 
 ---
 
