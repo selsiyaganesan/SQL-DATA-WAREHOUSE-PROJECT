@@ -60,5 +60,4 @@ The **Gold Layer** is the business-level data representation, structured to supp
 | quantity      | INT          | The number of units sold in the transaction. |
 | price         | INT          | The selling price per unit of the product. |
 
-| quantity      | INT          | Number of units sold. |
-| price         | INT          | Price per unit for the product in the order. |
+
