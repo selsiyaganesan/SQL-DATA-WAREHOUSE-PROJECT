@@ -24,9 +24,9 @@ SQL-DATA-WAREHOUSE-PROJECT/
 │
 ├── Docs/
 │ ├── data_catalog.md
-│ ├── DATA_FLOW.png
-│ ├── data_integration.png
-│ └── DATA MART_STAR SCHEMA.png
+│ ├── data_flow.md
+│ ├── data_integration.md
+│ └── data_model.md
 │
 ├── scripts/
 │ ├── bronze_load.sql
